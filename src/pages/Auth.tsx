@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { X } from "lucide-react";
 import { AuthInput } from "@/components/ui/auth-input";
 import { AuthButton } from "@/components/ui/auth-button";
 import { GoogleIcon, MicrosoftIcon, AppleIcon } from "@/components/icons/SocialIcons";
@@ -90,7 +91,15 @@ const Auth = () => {
   return (
     <div className="min-h-screen auth-gradient flex items-center justify-center p-4">
       <div className="w-full max-w-md fade-in">
-        <div className="bg-auth-card auth-card-shadow rounded-2xl p-8">
+        <div className="bg-auth-card auth-card-shadow rounded-2xl p-8 relative">
+          {/* Close Button */}
+          <button
+            onClick={() => navigate("/")}
+            className="absolute top-4 right-4 p-2 rounded-lg text-auth-text-muted hover:text-auth-text hover:bg-auth-input-bg transition-all duration-200"
+            aria-label="Close"
+          >
+            <X className="w-5 h-5" />
+          </button>
           <AuthLogo />
           
           <h1 className="text-2xl font-semibold text-auth-text text-center mb-2">
