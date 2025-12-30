@@ -7,11 +7,13 @@ import { GoogleIcon, MicrosoftIcon, AppleIcon } from "@/components/icons/SocialI
 import AuthDivider from "@/components/auth/AuthDivider";
 import AuthLogo from "@/components/auth/AuthLogo";
 import { toast } from "sonner";
+import { useChatContext } from "@/contexts/ChatContext";
 
 type AuthMode = "login" | "signup";
 
 const Auth = () => {
   const navigate = useNavigate();
+  const { setIsAuthenticated } = useChatContext();
   const [mode, setMode] = useState<AuthMode>("login");
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -69,7 +71,8 @@ const Auth = () => {
       setIsLoading(false);
       if (mode === "login") {
         toast.success("Welcome back!");
-        navigate("/");
+        setIsAuthenticated(true);
+        navigate("/chat");
       } else {
         toast.success("Account created successfully!");
         setMode("login");
@@ -107,8 +110,8 @@ const Auth = () => {
           </h1>
           <p className="text-auth-text-muted text-center text-sm mb-8">
             {mode === "login" 
-              ? "Log in to continue to ChatGPT" 
-              : "Sign up to start using ChatGPT"}
+              ? "Log in to continue to SigmaGPT" 
+              : "Sign up to start using SigmaGPT"}
           </p>
 
           {/* Social Login Buttons */}
