@@ -63,6 +63,12 @@ export default {
           "social-text": "hsl(var(--auth-social-text))",
           "social-border": "hsl(var(--auth-social-border))",
         },
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          accent: "hsl(var(--sidebar-accent))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

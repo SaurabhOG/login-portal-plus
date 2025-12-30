@@ -6,35 +6,41 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 9%;
+    --background: 0 0% 13%;
+    --foreground: 0 0% 93%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 9%;
+    --card: 0 0% 13%;
+    --card-foreground: 0 0% 93%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 9%;
+    --popover: 0 0% 13%;
+    --popover-foreground: 0 0% 93%;
 
     --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 93%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 0 0% 96%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
     --ring: 160 84% 39%;
 
     --radius: 0.5rem;
+
+    /* Sidebar tokens */
+    --sidebar: 0 0% 9%;
+    --sidebar-foreground: 0 0% 70%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-accent: 0 0% 15%;
 
     /* Custom tokens */
     --auth-bg: 0 0% 8%;
@@ -51,26 +57,26 @@
   }
 
   .dark {
-    --background: 0 0% 8%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 13%;
+    --foreground: 0 0% 93%;
 
     --card: 0 0% 13%;
-    --card-foreground: 0 0% 95%;
+    --card-foreground: 0 0% 93%;
 
     --popover: 0 0% 13%;
-    --popover-foreground: 0 0% 95%;
+    --popover-foreground: 0 0% 93%;
 
     --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 18%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 93%;
 
     --muted: 0 0% 18%;
     --muted-foreground: 0 0% 60%;
 
-    --accent: 0 0% 18%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 100%;
@@ -78,6 +84,12 @@
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 160 84% 39%;
+
+    /* Sidebar tokens */
+    --sidebar: 0 0% 9%;
+    --sidebar-foreground: 0 0% 70%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-accent: 0 0% 15%;
   }
 }
 
