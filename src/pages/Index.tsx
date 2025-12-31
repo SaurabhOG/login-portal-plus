@@ -10,7 +10,9 @@ const Index = () => {
     <div className="min-h-screen auth-gradient flex flex-col items-center justify-center p-4">
       <div className="text-center fade-in">
         {/* Logo */}
-        <img src={logo} alt="SigmaGPT Logo" className="w-20 h-20 mx-auto mb-6" />
+        <div className="w-16 h-16 rounded-full bg-auth-text flex items-center justify-center mx-auto mb-6">
+          <img src={logo} alt="SigmaGPT Logo" className="w-10 h-10" />
+        </div>
 
         <h1 className="text-4xl font-semibold text-auth-text mb-3">
           SigmaGPT
