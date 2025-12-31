@@ -20,7 +20,7 @@ const Index = () => {
         </div>
 
         <h1 className="text-4xl font-semibold text-auth-text mb-3">
-          ChatGPT
+          SigmaGPT
         </h1>
         <p className="text-auth-text-muted text-lg mb-10 max-w-md mx-auto">
           Get instant answers, find creative inspiration, and learn something new.
